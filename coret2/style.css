@@ -1,0 +1,49 @@
+body {
+    height: 100vw;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    transition: transform 1s ease-in-out;
+    
+}
+
+.box:hover {
+    transform: translate(200px, 150px) rotate(90deg);
+
+    
+}
+
+
+/* .nav {
+    height: 30px;
+    width: 100px;
+    padding: 10px;
+    background: yellowgreen;
+    position: absolute;
+    top: 0;
+}
+
+.content {
+    height: 30px;
+    width: 100px;
+    padding: 10px;
+    background: yellow;
+    position: relative;
+    bottom: 0;
+}
+
+.footer {
+    height: 30px;
+    width: 100px;
+    padding: 10px;
+    background: grey;
+    position: fixed;
+    left: 0;
+} */
+

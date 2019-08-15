@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://image.flaticon.com/teams/slug/google.jpg" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png" alt="avatar">
+        <a href="">Profile</a>
+        <a href="">Images</a>
+        <a href="">Gmail</a>
+    </div>
+    <div class="main">
+        <div class="img-container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google">
+        </div>
+        <input type="text" onkeyup="cariEnter()">
+        <div class="button">
+            <input class="buttons" type="button" value="Google Search" onclick="cari()">
+            <input class="buttons" type="button" value="I'm Feeling Lucky">
+        </div>
+        <div class="lang">
+            <p>Google offered in :
+                <a href="">Indonesia</a>
+                <a href="">Bahasa Jawa</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="topfoot">
+            Indonesia
+        </div>
+        <div class="botfoot">
+            <div class="linkkiri">
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">About</a>
+                <a href="">How Search Work</a>
+            </div>
+            <div class="linkkanan">
+                <a href="">Privacy</a>
+                <a href="">Term</a>
+                <a href="">Settings</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+
+        cari = () => {
+        var inputan = document.getElementsByTagName('input')[0].value
+
+            window.open('http://google.com/search?q='+inputan)
+
+        }
+
+        cariEnter = () =>{
+            var inputan = document.getElementsByTagName('input')[0].value
+            if (inputan != '' && event.code == 'Enter'){
+                cari()
+
+            }
+        }
+
+    </script>
+</body>
+</html>
